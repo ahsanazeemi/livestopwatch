@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
+    transition: 0.5s all linear;
 }
 html{
     cursor: url('./cur1.png'), default;
@@ -29,6 +30,9 @@ body{
     padding: 20px;
     text-align: center;
 }
+#area h1{
+    margin-bottom: 10px;
+}
 #time{
     width: 100%;
     font-size: 50px;
@@ -38,7 +42,12 @@ body{
 }
 span{
     display: inline-block;
-    width: 80px;
+    width: 90px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    border: 1px grey solid;
+    padding: 3px;
+    border-radius: 10px;
 }
 #buttons{
     width: 100%;
@@ -63,7 +72,12 @@ span{
     color: black;
     border: none;
 }
-
+.hide{
+    display: none;
+}
+.show{
+    display: initial;
+}
 @media only screen and (max-width: 400px){
     #area{
         width: 300px;

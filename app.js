@@ -34,10 +34,11 @@ function stopwatch(){
 
 function start(){
     inter = setInterval(stopwatch, 10)
-    document.getElementById('but').hasAttribute.disabled;
+    document.getElementById('but').className='hide'
 }
 function stop(){
     clearInterval(inter)
+    document.getElementById('but').className='show'
 }
 function reset(){
     min = 0;
@@ -47,5 +48,6 @@ function reset(){
     sectxt.innerHTML = '0'+sec;
     msectxt.innerHTML = '0'+msec;
     stop()
+    document.getElementById('but').className='show'
 }
 
